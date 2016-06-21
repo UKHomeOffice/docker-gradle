@@ -1,7 +1,7 @@
 FROM java:8-jdk
 MAINTAINER Jon Shanks "jon.shanks@gmail.com" 
 
-ENV GRADLE_VERSION 2.5
+ENV GRADLE_VERSION 2.13
 ENV GRADLE_ROOT /opt
 ENV GRADLE_HOME /opt/gradle
 ENV GRADLE_BIN /usr/bin/gradle
