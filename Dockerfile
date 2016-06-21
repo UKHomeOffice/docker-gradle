@@ -8,6 +8,7 @@ ENV GRADLE_HOME /opt/gradle
 ENV GRADLE_BIN /usr/bin/gradle
 WORKDIR "$GRADLE_ROOT"
 
+RUN yum clean all && yum install -y unzip
 RUN curl -O -Ls "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" \
     && unzip "gradle-${GRADLE_VERSION}-bin.zip" \
     && ln -s "gradle-${GRADLE_VERSION}" gradle \
