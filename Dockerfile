@@ -1,4 +1,5 @@
-FROM java:8-jdk
+FROM quay.io/ukhomeofficedigital/centos-base:latest
+
 MAINTAINER Jon Shanks "jon.shanks@digital.homeoffice.gov.uk" 
 
 ENV GRADLE_VERSION 2.13
