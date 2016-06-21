@@ -4,4 +4,4 @@ services:
   - docker
 
 script:
-  - docker build -t docker-gradle:test .
+  - docker build -t quay.io/ukhomeofficedigital/gradle:travis .

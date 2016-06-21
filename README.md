@@ -1,4 +1,5 @@
 # Docker Gradle 
+[![Build Status](https://travis-ci.org/UKHomeOffice/docker-gradle.svg?branch=master)](https://travis-ci.org/UKHomeOffice/docker-gradle)
 
 Gradle in a docker image, the version of the image / tag will match the version of gradle
 
