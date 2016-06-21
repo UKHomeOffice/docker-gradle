@@ -1,4 +1,4 @@
-FROM quay.io/ukhomeofficedigital/centos-base:latest
+FROM quay.io/ukhomeofficedigital/openjdk8-jre:v0.2.0
 
 MAINTAINER Jon Shanks "jon.shanks@digital.homeoffice.gov.uk" 
 
