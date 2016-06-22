@@ -1,4 +1,4 @@
-FROM quay.io/ukhomeofficedigital/openjdk8-jre:v0.2.0
+FROM quay.io/ukhomeofficedigital/openjdk8:v0.1.2
 
 MAINTAINER Jon Shanks "jon.shanks@digital.homeoffice.gov.uk" 
 
@@ -15,7 +15,7 @@ RUN curl -O -Ls "https://services.gradle.org/distributions/gradle-${GRADLE_VERSI
     && ln -s "${GRADLE_HOME}/bin/gradle" "${GRADLE_BIN}"
 
 VOLUME ["/root/.gradle/caches"]
+VOLUME ["/root/.m2/repository"]
 VOLUME ["/code"]
 WORKDIR /code
 ENTRYPOINT ["gradle"]
-CMD ["-h"]
